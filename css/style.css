@@ -1,0 +1,287 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+/* make nav bar dynamic  */
+.sticky{
+    background-color: #3EAAF3;
+    position: fixed;
+    z-index: 999;
+}
+
+.navbar-nav li a{
+    color: #ffffff;
+}
+
+.slider{
+    background: url('../img/slider.png');
+    height: 625px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.main_text{
+    margin-top: 250px;
+    margin-left: 100px;
+}
+
+.main_sub{
+    letter-spacing: 2px;
+}
+
+#down-arrow{
+    font-size: 38px;
+    position: absolute;
+    left: 50%;
+    top: 140%;
+}
+
+.about-us{
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.about-us h5{
+    font-size: 14px;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    left: -64px;
+    color: #3EAAF3;
+    font-weight: bold;
+}
+
+.about-us h2{
+    font-size: 42px;
+    margin-left: 35px;
+    line-height: 45px;
+    font-weight: 100px;
+}
+
+.about-img{
+    background: url('../img/about.jpg');
+    height: 350px;
+    margin-top: 50px;
+}
+
+.about-company{
+    background-color: #f4f4f4;
+}
+
+.about-item{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 60px 30px;
+}
+
+.about-item i{
+    font-size: 42px;
+}
+
+.about-item h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-item hr{
+    background-color: #3EAAF3;
+    width: 45px;
+    height: 3px;
+    border: none;
+}
+
+.about-item p{
+    margin-top: 20px;
+}
+
+.about-item:hover{
+    background-color: #3EAAF3;
+    transition: 1000ms;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: white;
+}
+
+.about-item:hover hr{
+    background-color: #ffffff;
+}
+
+.service{
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+
+.service h5{
+    font-size: 14px;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: relative;
+    top: 60px; 
+    left: -64px;
+    color: #3EAAF3;
+    font-weight: bold;
+}
+
+.service h2{
+    font-size: 35px;
+    margin-left: 5px;
+    line-height: 45px;
+    font-weight: 100px;
+}
+
+.service p{
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+
+
+.advertise{
+    background: url('../img/about.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.advertise h2{
+    margin-top: 100px;
+    line-height: 50px;
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 2px 8px #3EAAF3;
+}
+
+.blog{
+    background: linear-gradient(to right, #222222, #3EAAF3);
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+}
+
+.blog h3{
+    font-size: 32px;
+}
+
+.blog .card{
+    background-color: #252525;
+}
+
+.blog .card:hover{
+    transform: translateY(-5px) scale(1);
+    transition: .3s;
+}
+
+.footer{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.copyright{
+    background-color: #3EAAF3;
+}
+
+/* Up arrow  */
+#upBtn{
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    background-color: #3EAAF3;
+    color: #ffffff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: none;
+}
+
+/* preloader */
+.loader-container{
+    background-color: #333333;
+    height: 825px;
+    width: 100%;
+    z-index: 9999;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #3EAAF3;
+    border-radius: 50%;
+    animation: loader 1s linear infinite;
+    border-top-color: transparent;
+}
+
+@keyframes loader{
+    25%{
+        color: #ff0000;
+    }
+
+    50%{
+        color: #00ff00;
+    }
+
+    75%{
+        color: #0000ff;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* About page  */
+.about-page{
+    background: url('../img/about-page.jpg');
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.breadcrumb{
+    background-color: transparent;
+    padding: 160px 0;
+}
+
+.breadcrumb-item.active {
+    color: #ffffff;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #ffffff;
+}
+
+.about-detail img{
+    border-radius: 10px;
+}
+.about-detail hr{
+    background-color: #3EAAF3;
+    width: 90px;
+    height: 3px;
+    border: none;
+}
+
+.about-detail p{
+    line-height: 27px;
+}
